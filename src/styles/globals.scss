@@ -1,7 +1,36 @@
+:root {
+
+  --text-title: #F8F8F8;
+  --text-subtitle: #F8F8F8;
+  --text-info: #BBBBBB;
+  --text-body: #D7D7D7;
+
+  --gray-800: #33373d;
+  --gray-900: #282C34;
+
+  --pink-500: #FF57B2;
+
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// TODO
+body {
+  background: var(--gray-900);
+  color: var(--white);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

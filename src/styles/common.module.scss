@@ -1,1 +1,12 @@
-// TODO
+.container {
+    background: var(--gray-900);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    height: calc(100vh - 6rem);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}

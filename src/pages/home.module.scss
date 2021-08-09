@@ -1,1 +1,75 @@
-// TODO
+.posts {
+    width: 100%;
+    margin: 0 auto;
+
+    a {
+        display: block;
+
+        & + a {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 1.75rem;
+            line-height: 2rem;
+            font-weight: 700;
+            color: var(--text-title);   
+            margin-bottom: 0.5rem;
+        }
+        
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            color: var(--text-subtitle); 
+            margin-bottom: 1.5rem;  
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            color: var(--text-info);
+            line-height: 1.25rem;
+            font-weight: 400;
+            font-size: 0.9rem;
+            gap: 1.5rem;  
+
+            div {
+                display: flex;
+                align-items:center;
+            }
+          
+            svg {
+                align-items: center;
+                margin-right: 0.5rem;
+                font-size: 1.25rem;
+                top: 2rem;
+            }
+        }       
+        
+        &:hover h1 { 
+            color: var(--pink-500);
+        }
+    }
+}
+
+.loadingMorePosts {
+    button {
+        color: var(--pink-500);
+        font-weight: 600;
+        font-size: 1.125rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border: 0;
+        background: transparent;
+        transition: filter 0.2s;
+    
+        &:hover {
+          filter: brightness(0.7);
+          cursor: pointer;
+        }
+      }
+}
